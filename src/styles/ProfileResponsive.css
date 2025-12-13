@@ -1,0 +1,641 @@
+/* Comprehensive Responsive styles for Profile page */
+
+/* Base responsive styles */
+.profile-responsive {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .profile-page {
+    padding: 12px !important;
+    background-attachment: scroll !important;
+    border-radius: 0 !important;
+    min-height: 100vh !important;
+  }
+  
+  /* User Number Section Mobile */
+  .user-number-section {
+    flex-direction: column !important;
+    gap: 16px !important;
+    text-align: center !important;
+    padding: 20px 16px !important;
+    border-radius: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .main-user-number {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
+  
+  .number-value {
+    font-size: 2.5rem !important;
+    padding: 8px 16px !important;
+  }
+  
+  .family-numbers-preview {
+    align-items: center !important;
+  }
+  
+  .family-number-list {
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+  }
+  
+  /* Profile Header Mobile */
+  .profile-header {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 30px 20px !important;
+    gap: 20px !important;
+    border-radius: 20px !important;
+  }
+  
+  .avatar {
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 2.5rem !important;
+    margin: 0 auto !important;
+  }
+  
+  .profile-info h1 {
+    font-size: 2rem !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .profile-info p {
+    font-size: 1.1rem !important;
+    margin-bottom: 16px !important;
+  }
+  
+  /* Section Mobile */
+  .section {
+    padding: 20px 16px !important;
+    border-radius: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .section h2 {
+    font-size: 1.5rem !important;
+    margin-bottom: 20px !important;
+    text-align: center !important;
+  }
+  
+  /* Compact Grid Mobile */
+  .compact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    margin-bottom: 24px !important;
+  }
+  
+  .compact-card {
+    padding: 20px 16px !important;
+    border-radius: 16px !important;
+    margin-bottom: 16px !important;
+  }
+  
+  .compact-card h3 {
+    font-size: 1.2rem !important;
+    margin-bottom: 16px !important;
+    text-align: center !important;
+  }
+  
+  /* Personal Card Mobile */
+  .personal-card {
+    grid-column: span 1 !important;
+  }
+  
+  .personal-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  
+  .basic-info {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  
+  .info-badge {
+    padding: 14px !important;
+    border-radius: 12px !important;
+  }
+  
+  .badge-icon {
+    font-size: 1.2rem !important;
+  }
+  
+  .badge-label {
+    font-size: 0.65rem !important;
+  }
+  
+  .badge-value {
+    font-size: 0.85rem !important;
+  }
+  
+  /* Professional & Education Mobile */
+  .prof-edu-grid {
+    gap: 20px !important;
+  }
+  
+  .prof-section, .edu-section {
+    padding: 16px !important;
+    border-radius: 12px !important;
+  }
+  
+  .section-title {
+    font-size: 0.9rem !important;
+    margin-bottom: 12px !important;
+  }
+  
+  /* Health Grid Mobile */
+  .health-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  
+  .health-stats {
+    gap: 10px !important;
+  }
+  
+  .stat-item {
+    padding: 12px !important;
+    border-radius: 10px !important;
+  }
+  
+  .stat-icon {
+    font-size: 1rem !important;
+  }
+  
+  .stat-label {
+    font-size: 0.6rem !important;
+  }
+  
+  .stat-value {
+    font-size: 0.8rem !important;
+  }
+  
+  /* Compact Items Mobile */
+  .compact-item {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    padding: 12px !important;
+    gap: 8px !important;
+  }
+  
+  .compact-item .label {
+    font-size: 0.8rem !important;
+  }
+  
+  .compact-item .value {
+    font-size: 0.9rem !important;
+    text-align: left !important;
+  }
+  
+  /* Family Cards Mobile */
+  .family-compact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+  
+  .family-compact-card {
+    padding: 20px 16px !important;
+    border-radius: 20px !important;
+  }
+  
+  .family-compact-header {
+    flex-direction: column !important;
+    text-align: center !important;
+    gap: 12px !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .family-avatar {
+    width: 60px !important;
+    height: 60px !important;
+    font-size: 1.5rem !important;
+    margin: 0 auto !important;
+  }
+  
+  .family-compact-header h4 {
+    font-size: 1.2rem !important;
+    margin-bottom: 6px !important;
+  }
+  
+  .relation {
+    padding: 6px 12px !important;
+    font-size: 0.7rem !important;
+    border-radius: 15px !important;
+  }
+  
+  .member-id {
+    padding: 4px 8px !important;
+    font-size: 0.65rem !important;
+    border-radius: 12px !important;
+    margin-top: 6px !important;
+  }
+  
+  .family-full-details {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  
+  .family-detail-item {
+    padding: 12px !important;
+    border-radius: 10px !important;
+  }
+  
+  .family-detail-item .label {
+    font-size: 0.7rem !important;
+  }
+  
+  .family-detail-item .value {
+    font-size: 0.85rem !important;
+  }
+  
+  /* About Section Mobile */
+  .about-section {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+    margin-top: 24px !important;
+  }
+  
+  .about-item {
+    padding: 16px !important;
+    border-radius: 12px !important;
+  }
+  
+  .about-item h4 {
+    font-size: 1rem !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .about-item p {
+    font-size: 0.9rem !important;
+    line-height: 1.5 !important;
+  }
+  
+  /* No Data Mobile */
+  .no-data {
+    padding: 40px 20px !important;
+    border-radius: 20px !important;
+    font-size: 1rem !important;
+  }
+  
+  .no-data::before {
+    font-size: 3rem !important;
+    margin-bottom: 16px !important;
+  }
+}
+
+/* Tablet devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .profile-page {
+    padding: 16px !important;
+    background-attachment: scroll !important;
+  }
+  
+  .user-number-section {
+    padding: 24px !important;
+    border-radius: 22px !important;
+  }
+  
+  .number-value {
+    font-size: 3rem !important;
+  }
+  
+  .profile-header {
+    padding: 40px 30px !important;
+    gap: 30px !important;
+    border-radius: 25px !important;
+  }
+  
+  .avatar {
+    width: 120px !important;
+    height: 120px !important;
+    font-size: 3rem !important;
+  }
+  
+  .profile-info h1 {
+    font-size: 2.5rem !important;
+  }
+  
+  .section {
+    padding: 30px 24px !important;
+    border-radius: 22px !important;
+  }
+  
+  .compact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+    gap: 20px !important;
+  }
+  
+  .personal-card {
+    grid-column: span 1 !important;
+  }
+  
+  .personal-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  .basic-info {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 14px !important;
+  }
+  
+  .health-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  .family-compact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+  
+  .family-compact-header {
+    flex-direction: row !important;
+    text-align: left !important;
+  }
+  
+  .family-avatar {
+    width: 70px !important;
+    height: 70px !important;
+    font-size: 2rem !important;
+  }
+  
+  .family-full-details {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 14px !important;
+  }
+  
+  .about-section {
+    grid-template-columns: 1fr !important;
+    gap: 20px !important;
+  }
+}
+
+/* Small desktop (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .profile-page {
+    padding: 20px !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+  }
+  
+  .compact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+    gap: 24px !important;
+  }
+  
+  .personal-card {
+    grid-column: span 2 !important;
+  }
+  
+  .personal-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 30px !important;
+  }
+  
+  .basic-info {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .health-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 25px !important;
+  }
+  
+  .family-compact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)) !important;
+    gap: 28px !important;
+  }
+  
+  .family-full-details {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 16px !important;
+  }
+  
+  .about-section {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+  }
+}
+
+/* Large desktop (1025px and up) */
+@media (min-width: 1025px) {
+  .profile-page {
+    padding: 24px !important;
+    max-width: 1400px !important;
+    margin: 0 auto !important;
+  }
+  
+  .compact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr)) !important;
+    gap: 30px !important;
+  }
+  
+  .personal-card {
+    grid-column: span 2 !important;
+  }
+  
+  .personal-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 30px !important;
+  }
+  
+  .basic-info {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+  
+  .health-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 25px !important;
+  }
+  
+  .family-compact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)) !important;
+    gap: 30px !important;
+  }
+  
+  .family-full-details {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)) !important;
+    gap: 15px !important;
+  }
+  
+  .about-section {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+    gap: 25px !important;
+  }
+}
+
+/* Landscape mobile orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  .profile-header {
+    flex-direction: row !important;
+    text-align: left !important;
+    padding: 30px 24px !important;
+  }
+  
+  .avatar {
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 2rem !important;
+  }
+  
+  .profile-info h1 {
+    font-size: 1.8rem !important;
+  }
+  
+  .user-number-section {
+    flex-direction: row !important;
+    text-align: left !important;
+  }
+  
+  .main-user-number {
+    flex-direction: row !important;
+  }
+  
+  .number-value {
+    font-size: 2rem !important;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .compact-card {
+    min-height: 120px !important;
+  }
+  
+  .family-compact-card {
+    min-height: 200px !important;
+  }
+  
+  .action-button,
+  .edit-profile-button {
+    min-height: 48px !important;
+    padding: 14px 28px !important;
+  }
+  
+  .compact-item {
+    min-height: 60px !important;
+    padding: 16px !important;
+  }
+  
+  .family-detail-item {
+    min-height: 50px !important;
+    padding: 14px !important;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .profile-page {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .avatar img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .profile-page * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Print styles for profile */
+@media print {
+  .profile-page {
+    background: white !important;
+    padding: 20px !important;
+    box-shadow: none !important;
+  }
+  
+  .compact-card,
+  .family-compact-card {
+    box-shadow: none !important;
+    border: 1px solid #ccc !important;
+    break-inside: avoid !important;
+  }
+  
+  .avatar {
+    background: #f0f0f0 !important;
+    color: #333 !important;
+  }
+  
+  .user-number-section {
+    background: #f8f9fa !important;
+    color: #333 !important;
+  }
+}
+
+/* Very small screens (320px and below) */
+@media (max-width: 320px) {
+  .profile-page {
+    padding: 8px !important;
+  }
+  
+  .user-number-section {
+    padding: 16px 12px !important;
+  }
+  
+  .number-value {
+    font-size: 2rem !important;
+    padding: 6px 12px !important;
+  }
+  
+  .profile-header {
+    padding: 24px 16px !important;
+  }
+  
+  .avatar {
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 2rem !important;
+  }
+  
+  .profile-info h1 {
+    font-size: 1.6rem !important;
+  }
+  
+  .section {
+    padding: 16px 12px !important;
+  }
+  
+  .compact-card {
+    padding: 16px 12px !important;
+  }
+  
+  .family-compact-card {
+    padding: 16px 12px !important;
+  }
+}
+
+/* Extra large screens (1440px and up) */
+@media (min-width: 1440px) {
+  .profile-page {
+    max-width: 1600px !important;
+    padding: 32px !important;
+  }
+  
+  .compact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)) !important;
+    gap: 36px !important;
+  }
+  
+  .family-compact-grid {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)) !important;
+    gap: 36px !important;
+  }
+}

@@ -1,0 +1,509 @@
+/* Comprehensive Responsive styles for Home page */
+
+/* Base responsive container */
+.home-responsive {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .home-container {
+    padding: 8px !important;
+    margin: 0 !important;
+  }
+  
+  .home-content {
+    padding: 60px 8px 20px 8px !important;
+    margin: 0 !important;
+  }
+  
+  .logout-btn {
+    top: 8px !important;
+    right: 8px !important;
+    padding: 6px 12px !important;
+    font-size: 0.8rem !important;
+    min-height: 36px !important;
+    border-radius: 18px !important;
+  }
+  
+  .user-avatar {
+    width: 80px !important;
+    height: 80px !important;
+    font-size: 2.5rem !important;
+  }
+  
+  .welcome-title {
+    font-size: 1.4rem !important;
+    line-height: 1.3 !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+  }
+  
+  .section-card {
+    padding: 12px !important;
+    border-radius: 16px !important;
+    margin-bottom: 16px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+  
+  .section-title {
+    font-size: 1.3rem !important;
+  }
+  
+  .stats-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 10px !important;
+    width: 100% !important;
+  }
+  
+  .stat-card {
+    padding: 16px !important;
+    border-radius: 12px !important;
+    width: 100% !important;
+    min-height: 80px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+  }
+  
+  .stat-icon {
+    font-size: 2rem !important;
+  }
+  
+  .stat-value {
+    font-size: 1.4rem !important;
+  }
+  
+  .stat-label {
+    font-size: 0.9rem !important;
+  }
+  
+  .activity-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px !important;
+  }
+  
+  .activity-item {
+    padding: 12px !important;
+    border-radius: 10px !important;
+  }
+  
+  .activity-label {
+    font-size: 0.9rem !important;
+  }
+  
+  .activity-text {
+    font-size: 0.9rem !important;
+  }
+  
+  .activity-time {
+    font-size: 0.8rem !important;
+  }
+  
+  .quick-actions-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+  
+  .action-card {
+    padding: 20px 16px !important;
+    border-radius: 16px !important;
+    min-height: 200px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  .action-icon-container {
+    width: 60px !important;
+    height: 60px !important;
+    margin: 0 auto 15px !important;
+  }
+  
+  .action-icon {
+    font-size: 2.5rem !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .action-title {
+    font-size: 1.2rem !important;
+    margin-bottom: 8px !important;
+    font-weight: 700 !important;
+    line-height: 1.3 !important;
+  }
+  
+  .action-description {
+    font-size: 0.85rem !important;
+    margin-bottom: 16px !important;
+    line-height: 1.4 !important;
+    opacity: 0.9 !important;
+  }
+  
+  .action-button {
+    padding: 12px 24px !important;
+    font-size: 0.9rem !important;
+    border-radius: 25px !important;
+    min-height: 44px !important;
+    width: auto !important;
+    margin-top: auto !important;
+  }
+  
+  .quote-section {
+    padding: 15px !important;
+    border-radius: 12px !important;
+  }
+  
+  .quote-icon {
+    font-size: 1.5rem !important;
+    margin-right: 8px !important;
+    margin-left: 8px !important;
+  }
+  
+  .quote-text {
+    font-size: 1rem !important;
+  }
+
+  /* Event banners responsive */
+  .event-banners {
+    padding: 16px 8px !important;
+  }
+  
+  .banner-item {
+    min-width: 240px !important;
+    height: 140px !important;
+    margin: 8px !important;
+  }
+  
+  /* Welcome section responsive */
+  .welcome-section {
+    padding: 32px 16px !important;
+    border-radius: 20px !important;
+  }
+  
+  .welcome-stats {
+    flex-direction: column !important;
+    gap: 16px !important;
+  }
+  
+  .stat-item {
+    width: 100% !important;
+    padding: 16px !important;
+  }
+  
+  /* Daily quote responsive */
+  .daily-quote {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 16px !important;
+  }
+  
+  .quote-text {
+    font-size: 0.9rem !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .weather-info {
+    margin-left: 0 !important;
+  }
+  
+  /* Activities section responsive */
+  .activities-section {
+    padding: 24px 16px !important;
+  }
+  
+  .activity-grid {
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+  }
+  
+  .activity-item {
+    padding: 16px !important;
+    border-radius: 12px !important;
+  }
+  
+  /* Navigation section responsive */
+  .navigation-section {
+    padding: 32px 16px !important;
+  }
+  
+  .nav-grid {
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+  
+  .nav-item {
+    padding: 24px 20px !important;
+    min-height: 180px !important;
+  }
+  
+  .nav-icon {
+    font-size: 3rem !important;
+    margin-bottom: 16px !important;
+  }
+  
+  .nav-title {
+    font-size: 1.2rem !important;
+    margin-bottom: 8px !important;
+  }
+  
+  .nav-desc {
+    font-size: 0.9rem !important;
+  }
+}
+
+/* Tablet devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .home-content {
+    padding: 70px 16px 24px 16px !important;
+    max-width: 100% !important;
+  }
+  
+  .user-avatar {
+    width: 100px !important;
+    height: 100px !important;
+    font-size: 3rem !important;
+  }
+  
+  .welcome-title {
+    font-size: 2rem !important;
+  }
+  
+  .section-card {
+    padding: 20px !important;
+    border-radius: 15px !important;
+  }
+  
+  .section-title {
+    font-size: 1.5rem !important;
+  }
+  
+  .stats-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+  
+  .stat-card {
+    padding: 20px !important;
+  }
+  
+  .stat-icon {
+    font-size: 2.5rem !important;
+  }
+  
+  .stat-value {
+    font-size: 1.6rem !important;
+  }
+  
+  .stat-label {
+    font-size: 1rem !important;
+  }
+  
+  .activity-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) !important;
+    gap: 12px !important;
+  }
+  
+  .activity-item {
+    padding: 15px !important;
+  }
+  
+  .activity-label {
+    font-size: 1rem !important;
+  }
+  
+  .activity-text {
+    font-size: 1rem !important;
+  }
+  
+  .activity-time {
+    font-size: 0.9rem !important;
+  }
+  
+  .quick-actions-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 18px !important;
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+  
+  .action-card {
+    padding: 24px 20px !important;
+    border-radius: 18px !important;
+    min-height: 240px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  .action-icon-container {
+    width: 70px !important;
+    height: 70px !important;
+    margin: 0 auto 20px !important;
+  }
+  
+  .action-icon {
+    font-size: 2.5rem !important;
+  }
+  
+  .action-title {
+    font-size: 1.5rem !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .action-description {
+    font-size: 1rem !important;
+    margin-bottom: 20px !important;
+  }
+  
+  .action-button {
+    padding: 12px 24px !important;
+    font-size: 1rem !important;
+  }
+  
+  .quote-section {
+    padding: 20px !important;
+    border-radius: 15px !important;
+  }
+  
+  .quote-icon {
+    font-size: 2rem !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+  
+  .quote-text {
+    font-size: 1.2rem !important;
+  }
+}
+
+/* Small desktop (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .home-content {
+    padding: 80px 24px 32px 24px !important;
+    max-width: 960px !important;
+    margin: 0 auto !important;
+  }
+  
+  .stats-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 20px !important;
+  }
+  
+  .quick-actions-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 24px !important;
+    max-width: 800px !important;
+    margin: 0 auto !important;
+  }
+  
+  .action-card {
+    min-height: 300px !important;
+    padding: 32px 24px !important;
+  }
+}
+
+/* Large desktop (1025px and up) */
+@media (min-width: 1025px) {
+  .home-content {
+    padding: 80px 32px 40px 32px !important;
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+  }
+  
+  .stats-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 24px !important;
+  }
+  
+  .quick-actions-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, 1fr) !important;
+    gap: 28px !important;
+    max-width: 1000px !important;
+    margin: 0 auto !important;
+  }
+  
+  .action-card {
+    min-height: 320px !important;
+    padding: 36px 28px !important;
+  }
+}
+
+/* Landscape mobile orientation */
+@media (max-width: 768px) and (orientation: landscape) {
+  .home-content {
+    padding-top: 50px !important;
+  }
+  
+  .welcome-section {
+    padding: 24px 16px !important;
+  }
+  
+  .welcome-stats {
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+  }
+  
+  .stat-item {
+    flex: 1 1 calc(33.333% - 12px) !important;
+    min-width: 120px !important;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .action-card {
+    min-height: 120px !important;
+  }
+  
+  .action-button {
+    min-height: 48px !important;
+    padding: 14px 28px !important;
+  }
+  
+  .stat-card {
+    min-height: 100px !important;
+  }
+  
+  .nav-item {
+    min-height: 140px !important;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .home-content {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+/* Reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .home-content * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

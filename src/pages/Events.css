@@ -1,0 +1,191 @@
+/* Events Page Responsive Styles */
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Mobile devices (up to 480px) */
+@media (max-width: 480px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 0 8px;
+  }
+  
+  /* Event cards */
+  .event-card {
+    padding: 16px !important;
+    margin-bottom: 12px;
+  }
+  
+  /* Create event button */
+  .create-event-btn {
+    width: 100%;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+  
+  /* Tabs */
+  .tabs-container {
+    padding: 16px;
+  }
+  
+  .tab-button {
+    padding: 10px 12px;
+    font-size: 0.8rem;
+    flex: 1;
+    min-width: 0;
+  }
+  
+  /* Modal adjustments */
+  .event-modal {
+    width: 95vw !important;
+    max-width: none !important;
+    margin: 10px !important;
+    padding: 16px !important;
+  }
+  
+  .modal-header {
+    padding: 16px;
+    font-size: 1.2rem;
+  }
+  
+  .modal-body {
+    padding: 16px;
+  }
+  
+  /* Form inputs */
+  .form-input {
+    padding: 12px;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+  }
+  
+  .form-textarea {
+    min-height: 80px;
+  }
+  
+  /* Action buttons */
+  .action-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .action-button {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.8rem;
+  }
+  
+  /* Event details */
+  .event-title {
+    font-size: 1.1rem;
+  }
+  
+  .event-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .event-meta {
+    font-size: 0.8rem;
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+/* Tablet devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 18px;
+    padding: 0 12px;
+  }
+  
+  .event-card {
+    padding: 20px;
+  }
+  
+  .create-event-btn {
+    padding: 12px 20px;
+    font-size: 1rem;
+  }
+  
+  .tab-button {
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+  
+  .event-modal {
+    width: 90vw;
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .action-buttons {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .action-button {
+    flex: 1;
+    min-width: 120px;
+  }
+}
+
+/* Small desktop (769px to 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+  }
+  
+  .event-modal {
+    width: 80vw;
+    max-width: 700px;
+  }
+}
+
+/* Large desktop (1025px and up) */
+@media (min-width: 1025px) {
+  .events-grid {
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    gap: 24px;
+  }
+  
+  .event-modal {
+    width: 70vw;
+    max-width: 800px;
+  }
+}
+
+/* Landscape orientation for mobile */
+@media (orientation: landscape) and (max-height: 600px) {
+  .event-modal {
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .modal-body {
+    max-height: 60vh;
+    overflow-y: auto;
+  }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+  .tab-button,
+  .action-button,
+  .create-event-btn {
+    min-height: 44px;
+    padding: 12px 16px;
+  }
+  
+  .event-card {
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0.1);
+  }
+}

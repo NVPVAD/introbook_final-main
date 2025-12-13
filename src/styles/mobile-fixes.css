@@ -1,0 +1,138 @@
+/* Critical Mobile Fixes */
+
+/* Mobile Layout Adjustments */
+@media (max-width: 1024px) {
+  /* Add padding for mobile menu button */
+  body {
+    padding-top: 70px;
+  }
+  
+  /* Force show mobile menu */
+  .mobile-menu-btn {
+    display: block !important;
+    position: fixed !important;
+    top: 15px !important;
+    left: 15px !important;
+    z-index: 1000 !important;
+    background: #667eea !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    width: 44px !important;
+    height: 44px !important;
+    font-size: 18px !important;
+    cursor: pointer !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2) !important;
+  }
+}
+
+/* Global Mobile Overrides */
+@media (max-width: 480px) {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    overflow-x: hidden;
+    font-size: 14px;
+  }
+  
+  /* Prevent horizontal scroll */
+  .App, #root {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  /* Mobile containers */
+  .container, .edit-profile-container, .dashboard-container, 
+  .family-view-container, .profile-page {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 8px !important;
+    margin: 0 !important;
+  }
+  
+  /* Mobile cards */
+  .section-card, .home-card, .stat-card, .family-card, 
+  .responsive-card, .card {
+    width: 100% !important;
+    margin: 8px 0 !important;
+    padding: 12px !important;
+    border-radius: 8px !important;
+  }
+  
+  /* Mobile forms */
+  .form-group, .form-row-1, .form-row-2, .form-row-3 {
+    width: 100% !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+    margin-bottom: 12px !important;
+  }
+  
+  .form-group input, .form-group select, textarea {
+    width: 100% !important;
+    padding: 10px !important;
+    font-size: 14px !important;
+    border-radius: 6px !important;
+  }
+  
+  /* Mobile buttons */
+  button, .btn, .responsive-btn {
+    width: 100% !important;
+    padding: 12px !important;
+    font-size: 14px !important;
+    margin: 4px 0 !important;
+    border-radius: 6px !important;
+  }
+  
+  /* Mobile text */
+  h1 { font-size: 1.5rem !important; }
+  h2 { font-size: 1.3rem !important; }
+  h3 { font-size: 1.1rem !important; }
+  
+  /* Mobile grids */
+  .grid, .stats-grid, .card-grid, .activities-grid, 
+  .actions-grid, .members-grid {
+    grid-template-columns: 1fr !important;
+    gap: 8px !important;
+  }
+  
+  /* Mobile flex */
+  .flex, .d-flex, .quick-stats-row {
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+  
+  /* Mobile navigation */
+  .nav, .responsive-nav {
+    flex-direction: column !important;
+    padding: 8px !important;
+    gap: 8px !important;
+  }
+  
+  /* Mobile images */
+  img, .avatar, .profile-avatar-placeholder {
+    max-width: 60px !important;
+    max-height: 60px !important;
+  }
+  
+  /* Mobile spacing */
+  .p-4 { padding: 8px !important; }
+  .p-3 { padding: 6px !important; }
+  .m-4 { margin: 8px !important; }
+  .m-3 { margin: 6px !important; }
+  
+  /* Hide desktop elements */
+  .desktop-only, .d-desktop-block {
+    display: none !important;
+  }
+  
+  /* Show mobile elements */
+  .mobile-only, .d-mobile-block {
+    display: block !important;
+  }
+  
+  .d-mobile-flex {
+    display: flex !important;
+  }
+}
