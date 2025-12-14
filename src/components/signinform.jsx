@@ -34,14 +34,14 @@ const SigninForm = () => {
     en: {
       userLogin: 'User Login',
       signUp: 'New User Login',
-      otherLogin: 'Other Login',
+      otherLogin: 'Excel User Login',
       adminLogin: 'Admin Login',
       selectLoginType: 'Select Login Type'
     },
     gu: {
       userLogin: 'યુઝર લોગિન',
       signUp: 'નવા યુઝર લોગિન',
-      otherLogin: 'અન્ય લોગિન',
+      otherLogin: 'એક્સેલ ઉમેરાયેલ લોગિન',
       adminLogin: 'એડમિન લોગિન',
       selectLoginType: 'લોગિન પ્રકાર પસંદ કરો'
     }
